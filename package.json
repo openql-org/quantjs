@@ -1,0 +1,71 @@
+{
+  "name": "quantjs",
+  "version": "0.0.1",
+  "description": "QuantJS is a Javascript library for quantum computing. It aims to become basic library set of quantum computer system.",
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc --reporter=html --reporter=text gulp test",
+    "gulp": "gulp",
+    "compile": "gulp compile",
+    "build": "gulp build",
+    "bundle": "gulp bundle",
+    "watch": "gulp watch",
+    "docs": "gulp docs",
+    "clean": "gulp clean",
+    "dist-clean": "gulp dist-clean",
+    "coverage": "nyc --reporter=html --reporter=text gulp test",
+    "report": "nyc report --reporter=text"
+  },
+  "nyc": {
+    "include": [
+      "build/**/*.js"
+    ]
+  },
+  "directories": {
+    "doc": "docs",
+    "example": "examples",
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openql-org/quantjs.git"
+  },
+  "dependencies": {
+    "mathjs": "^3.16.1",
+    "mersennetwister": "^0.2.3"
+  },
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "chai": "^4.1.1",
+    "css-loader": "^0.28.4",
+    "del": "^3.0.0",
+    "documentation": "^5.2.1",
+    "gulp": "^3.9.1",
+    "gulp-documentation": "^3.2.1",
+    "gulp-mocha": "^4.3.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "jsdom": "^11.1.0",
+    "mocha": "^3.5.0",
+    "mocha-jsdom": "^1.1.0",
+    "node-sass": "^4.5.3",
+    "nyc": "^11.1.0",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.5.4"
+  },
+  "keywords": [
+    "OpenQL",
+    "openql",
+    "quantum computing"
+  ],
+  "homepage": "http://quantjs.org/",
+  "bugs": {
+    "url": "https://github.com/openql-org/quantjs/issues"
+  },
+  "author": "committer | OpenQL Project <committer@openql.org>",
+  "contributors": []
+}
