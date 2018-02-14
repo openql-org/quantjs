@@ -33,6 +33,7 @@
     "url": "https://github.com/openql-org/quantjs.git"
   },
   "dependencies": {
+    "codemirror": "^5.28.0",
     "mathjs": "^3.16.1",
     "mersennetwister": "^0.2.3"
   },

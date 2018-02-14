@@ -92,6 +92,7 @@ gulp.task('js-copy', function() {
 });
 
 gulp.task('test', ['build'], function() {
+  updateVersionFile();
   return gulp.src([TEST_DIR + "**/*test.js"], {read: false})
     .pipe(mocha({reporter: 'spec'}))
     .on('error', function(){});
@@ -113,11 +114,8 @@ gulp.task('watch', function () {
   gulp.watch([SRC_DIR + '**/*.html'], ['html']);
 });
 
-gulp.task('build',  ['html-copy','style','js-copy'], function() {
-  updateVersionFile();
-});
+gulp.task('build',  ['html-copy','style','js-copy']);
 gulp.task('compile', ['build']);
-gulp.task('coverage', ['test']);
 gulp.task('clean', del.bind(null, [BUILD_DIR, DIST_DIR,'**/*.log']));
 gulp.task('dist-clean', ['clean'], del.bind(null, 
   [ __dirname + '/node_modules',

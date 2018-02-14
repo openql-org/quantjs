@@ -8,7 +8,7 @@ module.exports = {
       ]
     }]
   },
-  entry: './index',
+  entry: './app',
   output: {
     libraryTarget: 'umd',
     path: __dirname + '/dist',

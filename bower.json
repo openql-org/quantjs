@@ -1,0 +1,23 @@
+{
+  "name": "q-face-js",
+  "description": "q-face-js is reference implementation of OpenQL in Javascript.",
+  "main": "qasm_simulator.js",
+  "authors": [
+    "committer | OpenQL Project <committer@openql.org>"
+  ],
+  "license": "Apache-2.0",
+  "keywords": [
+    "OpenQL",
+    "openql",
+    "quantum",
+    "computing"
+  ],
+  "homepage": "http://openql.org/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
